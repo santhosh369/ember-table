@@ -5,7 +5,7 @@ import { click } from 'ember-native-dom-helpers';
 import { mouseDown, mouseMove, mouseUp } from '../../helpers/mouse';
 import { getScale } from '../../helpers/element';
 
-const Header = PageObject.extend({
+export const Header = PageObject.extend({
   get text() {
     return findElement(this)
       .innerText.replace(/\s+/g, ' ')
